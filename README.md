@@ -43,7 +43,7 @@ _The **Bariste** MVP_
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+> All supporting libraries and dependencies, and their role in the project.
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -51,6 +51,7 @@ _The **Bariste** MVP_
 |   React Router   | __ |
 |       SQL        | __ |
 |     RAILS        | __ |
+|         -        | __ |
 
 
 <br>
@@ -76,13 +77,15 @@ _The **Bariste** MVP_
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Main.jsx
+      |__ Nav.jsx
+      |__ Log in.jsx
+      |__ Sign up.jsx
+      |__ Brew Gallery.jsx
+      |__ Comment Section.jsx
+      |__ Add Craft.jsx
+      |__ User Craft List.jsx
 |__ services/
 
 ```
@@ -93,10 +96,11 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| AUTH                |    H     |     8 hrs     |     0 hrs     |    TBD    |
+| RAILS BACK END      |    H     |     8 hrs      |     0 hrs     |     TBD     |
+| AUTH                |    H     |     8 hrs      |     0 hrs     |     TBD     |
 | Create CRUD Actions |    H     |     8 hrs      |     0 hrs     |     TBD     |
 | CSS/HTML            |    H     |     8 hrs      |     0 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     0 hrs     |     TBD     |
+| TOTAL               |          |     0 hrs      |     0 hrs     |     TBD     |
 
 
 <br>
@@ -111,7 +115,7 @@ src
 
 ## Post-MVP
 
--_WIP_
+-_ratings_
 
 ***
 
