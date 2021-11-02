@@ -50,8 +50,8 @@ _The **Bariste** MVP_
 |      React       | __ |
 |   React Router   | __ |
 |       SQL        | __ |
-|     Express      | __ |
-|  Express Router  | __ |
+|     RAILS        | __ |
+
 
 <br>
 
