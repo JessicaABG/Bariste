@@ -116,6 +116,9 @@ src
 ## Post-MVP
 
 -_ratings_
+-_e-commerce_
+-_share externally_
+-_map to review local beverage industries_
 
 ***
 
