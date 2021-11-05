@@ -11,9 +11,6 @@ Comment.destroy_all
 Craft.destroy_all
 User.destroy_all
 
-
-
-
 @admin= User.create!(username: 'myName321', email: 'jabg324@gmail.com', password:'123456')
 @admin= User.create!(username: 'myName331', email: 'j_a_g@aol.com', password:'123457')
 puts"#{User.count} users created"
