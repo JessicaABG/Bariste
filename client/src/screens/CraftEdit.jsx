@@ -3,9 +3,10 @@ import { useParams } from 'react-router-dom';
 
 export default function CraftEdit(props) {
   const [formData, setFormData] = useState({
-    name: '',
+    about: '',
+    img_url:''
   });
-  const { name } = formData;
+  const { about, img_url } = formData;
   const { id } = useParams();
   const { crafts, handleCraftUpdate } = props;
 
@@ -13,7 +14,8 @@ export default function CraftEdit(props) {
     const prefillFormData = () => {
       const craftItem = crafts.find(craft => craft.id === Number(id))
       setFormData({
-        name: craftItem.name
+        about: craftItem.about,
+        img_url: craftItem.img_url
       })
     };
     if (crafts.length) {
@@ -24,7 +26,8 @@ export default function CraftEdit(props) {
   const handleChange = (e) => {
     const { value } = e.target;
     setFormData({
-      name: value,
+      about: value,
+      img_url:value
     });
   };
 
@@ -37,10 +40,20 @@ export default function CraftEdit(props) {
     >
       <h1>Edit Craft</h1>
       <label>
-        Name:
-        <input type='text' value={name} onChange={handleChange} />
+        About:
+        <input 
+        type='text' 
+        value={about} 
+        onChange={handleChange} />
       </label>
       <br />
+      <label>
+        Image Address:
+        <input 
+        type='text' 
+        value={img_url} 
+        onChange={handleChange} />
+      </label>
       <button>Submit</button>
     </form>
   );

@@ -54,9 +54,9 @@ export default function MainContainer() {
   return (
     <Switch>
 
-      <Route path='/crafts'>
+      {/* <Route path='/crafts'>
         
-      </Route>
+      </Route> */}
       <Route path='/crafts/:id/edit'>
         <CraftEdit crafts={crafts} handleCraftUpdate={handleCraftUpdate} />
       </Route>

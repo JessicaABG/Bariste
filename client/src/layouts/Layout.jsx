@@ -19,11 +19,11 @@ export default function Layout(props) {
         {currentUser && (
           <div>
             <Link to='/crafts'>craft gallery</Link>
-            <Link to='/new'>new craft submission</Link>
+            <Link to='/crafts/new'>new craft submission</Link>
           </div>
         )}
             </header>
-            {props.children}
+            {children}
         </div>
     )
 }

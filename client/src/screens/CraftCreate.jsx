@@ -2,15 +2,18 @@ import { useState } from 'react';
 
 export default function CraftCreate(props) {
   const [formData, setFormData] = useState({
-    name: '',
+    about: '',
+    img_url:''
   });
-  const { name } = formData;
+  // const { about } = formData;
+  // const { img_url } = formData;
   const { handleCraftCreate } = props;
 
   const handleChange = (e) => {
     const { value } = e.target;
     setFormData({
-      name: value,
+      about: value,
+      img_url:value
     });
   };
 
@@ -23,8 +26,19 @@ export default function CraftCreate(props) {
     >
       <h1>Create Craft</h1>
       <label>
-        Name:
-        <input type='text' value={name} onChange={handleChange} />
+        Image Address:
+        <input 
+        type='text' 
+        value={formData.img_url} 
+        onChange={handleChange} />
+      </label>
+      <br />
+      <label>
+        About:
+        <input 
+        type='text' 
+        value={formData.about} 
+        onChange={handleChange} />
       </label>
       <br />
       <button>Submit</button>
