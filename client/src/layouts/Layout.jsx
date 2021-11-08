@@ -3,9 +3,10 @@ import {Link} from 'react-router-dom'
 
 export default function Layout(props) {
     const { children, currentUser, handleLogout } = props;
+
     return (
         <div>
-            <header>
+            <header className='nav'>
                 <h1>Bariste</h1>
                 {currentUser ? (
           <div>
@@ -17,7 +18,7 @@ export default function Layout(props) {
         )}
         <hr />
         {currentUser && (
-          <div>
+          <div className='crafts'>
             <Link to='/crafts'>craft gallery</Link>
             <Link to='/crafts/new'>new craft submission</Link>
           </div>

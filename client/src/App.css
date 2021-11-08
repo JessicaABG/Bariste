@@ -1,3 +1,19 @@
 .App{
-    text-align: center;
+    background-color:#899492 ;
+    display: grid;
+    
+    
+}
+.nav{
+    display: inline-flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    row-gap: 10px;
+}
+.nav h1{
+    font-size: 24px;
+}
+.crafts{
+    display: grid;
+    flex-direction: column;
 }
