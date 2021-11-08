@@ -8,7 +8,7 @@ export default function Crafts(props) {
       {crafts.map((craft) => (
         <div key={craft.id}>
           <Link to={`/crafts/${craft.id}`}>
-            <p><img src={craft.img_url} height='auto' width='200px' alt='images of beverages'/>{craft.about}</p>
+            <p><img src={craft.img_url} height='auto' width='200px' alt-text='images of beverages'/>{craft.about}</p>
           </Link>
           <Link to={`/crafts/${craft.id}/edit`}>
             <button>edit</button>
